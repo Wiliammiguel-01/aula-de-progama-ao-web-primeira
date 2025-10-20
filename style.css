@@ -13,54 +13,7 @@ header {
     text-align: center;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 10px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}main {
-    max-width: 800px;          
-    margin: 40px auto;         
-    padding: 20px;
-    background-color: white;   
-    border-radius: 10px;       
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);  
-}
-section {
-    margin-bottom: 30px;    
-}h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #f5f5f5;
-    text-transform: uppercase; 
-    letter-spacing: 2px;       
-}
-
-h2 {
-    color: #0709a7;
-    margin-bottom: 15px;
-    font-weight: 600;
-}img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 10px 0;
-}footer {
-    background-color: #006699;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.9rem;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-}nav ul {
+nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
@@ -76,11 +29,63 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1rem;
+    margin: 0 10px;
     transition: color 0.3s ease;
 }
+
 nav a:hover {
     color: #ffcc00;
-}botao {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;          
+    margin: 40px auto;         
+    padding: 20px;
+    background-color: white;   
+    border-radius: 10px;       
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+}
+
+section {
+    margin-bottom: 30px;    
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+    text-transform: uppercase; 
+    letter-spacing: 2px;       
+}
+
+h2 {
+    color: #0709a7;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #006699;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.botao {
     display: inline-block;
     background-color: #0077cc;
     color: white;
@@ -97,3 +102,18 @@ nav a:hover {
     background-color: #005fa3;
     transform: translateY(-2px);
 }
+
+@media (max-width: 600px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+        margin: 20px;
+    }
+}
+body {
+    padding-bottom: 60px;
+ }
